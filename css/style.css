@@ -1,86 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-body{
-    height: 100vh;
-    width: 100%;
-}
-.content .heading{
-    position: sticky;
-    top: 0;
-    background: rgb(3, 0, 156);
-    height: 56px;
-}
-.content .heading h3{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px;
-}
-.content .sec1 .user_info{
-    margin: 10px;
-    border: 2px solid #808080;
-    border-radius: 10px;
-}
-    
+    * {
+        box-sizing: border-box;
+    }
 
-.content .sec1 .user_info h3{
-    padding: 15px;
-    color: #fff;
-    background-color: #808080;
-}
-.content .sec1 .user_info img{
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid #000;
-    margin: 10px;
-    margin-top: 20px;
-    float: left;
-}
-.content .sec1 .user_info ul li{
-    font-size: 20px;
-    font-weight: 400;
-    list-style-type: none;
-    line-height: 50px;
-}
-.content .sec2 .user_detail h3{
-    margin: 10px;
-    padding: 5px;
-}
-.content .sec2 .user_detail ul li{
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 80px;
-    list-style-type:circle;
-    padding: 5px;
-}
-.content .sec2 .user_detail ul li:hover{
-    color: rgb(3, 0, 156);
-    cursor: pointer;
-}
-.content .sec2 .user_detail p{
-    text-align: justify;
-    margin-left: 70px;
-    padding: 10px;
-}
-@media(max-width:992px){
-    .content .heading{
-        background: rgb(133, 3, 255);
-    }   
-}
-@media(768px <= width <= 991px){
-    .content .heading{
-        background: rgb(5, 2, 92);
-    }   
-}
-@media(max-width:767px){
-    .content .heading{
-        background: rgb(54, 204, 253);
-    }   
-}
+    body {
+        background-color: white;
+    }
+
+    h1 {
+       margin-bottom: 15px;
+    text-align: center;
+    color: #ff4532;
+    font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
+
+    }
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+        }
